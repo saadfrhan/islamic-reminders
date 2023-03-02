@@ -1,26 +1,23 @@
 {
+  "name": "islamic-reminders",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev:frontend": "cd frontend && yarn dev",
-    "build:frontend": "cd frontend && yarn build",
-    "export:frontend": "cd frontend && yarn export",
-    "start:frontend": "cd frontend && yarn start",
-    "release": "release-it"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "devDependencies": {
-    "@release-it/conventional-changelog": "^5.1.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "release-it": "^15.4.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md,tsx,ts}": [
-      "prettier --write"
-    ]
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@types/node": "18.11.19",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
   }
 }
